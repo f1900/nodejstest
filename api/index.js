@@ -7,5 +7,5 @@ import _ from 'lodash';
     res.setHeader('Content-Type', 'text/plain');
     res.write("aaaaaaaaaaaaaaaa\n");
     // res.end("wwwwwwwwwwwwwwwwwwwwww");
-    res.end(String(_.add(1, 6)));
+    res.end(7);
   }
