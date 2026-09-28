@@ -5,6 +5,7 @@
 import _ from 'lodash';
   export default function handler(req, res) {
     res.setHeader('Content-Type', 'text/plain');
-    res.write("aaaaaaaaaaaaaaaa");
+    // res.write("aaaaaaaaaaaaaaaa");
+    res.end("wwwwwwwwwwwwwwwwwwwwww");
     // res.end(_.add(1, 2));
   }
