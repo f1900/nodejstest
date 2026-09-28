@@ -1,7 +1,9 @@
-import { a, b, c, d, e } from "./ex.js";
-//import lodash from "lodash";
+// module.exports = (req, res) => {
+//     res.setHeader('Content-Type', 'text/plain');
+//     res.end('Hello World');
+//   };
 
-console.log(a, b, c, d, e);
-console.log("${a}, $b, $c, $d, $e");
-//console.log(lodash.add(1, 2, 3, 4, 5));
-console.log(123456);
+  export default function handler(req, res) {
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World');
+  }
