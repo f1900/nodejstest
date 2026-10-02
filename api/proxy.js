@@ -1,11 +1,7 @@
-// module.exports = (req, res) => {
-//     res.setHeader('Content-Type', 'text/plain');
-//     res.end('Hello World');
-//   };
-import _ from 'lodash';
+// server.js
 import express from 'express';
 import { createProxyMiddleware } from 'http-proxy-middleware';
-  
+
 const app = express();
 
 app.use('/', createProxyMiddleware({
@@ -19,16 +15,7 @@ app.use('/', createProxyMiddleware({
     proxyRes.headers['access-control-allow-origin'] = '*';
   },
 }));
-export default app;
-// export default function handler(req, res) {
-//     res.setHeader('Content-Type', 'text/plain');
-//     res.write("aaaaaaaaaaaaaaaa\n");
-//     res.write("7");
-//     // res.end("wwwwwwwwwwwwwwwwwwwwww");
-//     res.end(String(_.add(1, 2)));
 
-
-
-
-
-//   }
+app.listen(3000, () => {
+  console.log('代理服务器运行在 http://localhost:3000');
+});
