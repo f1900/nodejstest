@@ -26,9 +26,4 @@ export default function handler(req, res) {
     res.write("7");
     // res.end("wwwwwwwwwwwwwwwwwwwwww");
     res.end(String(_.add(1, 2)));
-
-
-
-
-
-//   }
+  }
