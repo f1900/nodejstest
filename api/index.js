@@ -24,8 +24,8 @@ app.use('/', createProxyMiddleware({//https://raw.gitmirror/hello-world-1989/cn-
   },
 }));
 // Vercel 用 export default，本地用 app.listen
-// export default app;
-app.listen(3000, () => console.log('http://localhost:3000'));
+export default app;
+// app.listen(3000, () => console.log('http://localhost:3000'));
 // export default function handler(req, res) {
 //     res.setHeader('Content-Type', 'text/plain');
 //     res.write("aaaaaaaaaaaaaaaa\n");
